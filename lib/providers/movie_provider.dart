@@ -3,7 +3,7 @@ import 'package:tmdb_api/tmdb_api.dart';
 
 final movieProvider = FutureProvider<Map<String, dynamic>>((ref) async {
   final String apiKey = 'd02fec62b5289599f096f360a2c6fe44';
-  final String readAccessToken = 'YOUR_READ_ACCESS_TOKEN_HERE';
+  final String readAccessToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMDJmZWM2MmI1Mjg5NTk5ZjA5NmYzNjBhMmM2ZmU0NCIsIm5iZiI6MTcyODg4NzMzMC42MDE2ODQsInN1YiI6IjY3MDdkNTFhMjAwYjUzODhiNTU2MzRkNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2nxgp0P7V2YDMBoJBElHBTeZJfsDtsnys6sNBsrRxsA';
 
   TMDB tmdbWithCustomLogs = TMDB(
     ApiKeys(apiKey, readAccessToken),
